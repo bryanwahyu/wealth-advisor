@@ -1,0 +1,30 @@
+{
+  "C001": {
+    "advisor": "R. Wijaya",
+    "segment": "Priority",
+    "kyc_expiry": "2026-10-20",
+    "last_contact": "2026-02-03",
+    "open_tickets": [],
+    "notes": "Prefers WhatsApp. Interested in offshore diversification."
+  },
+  "C002": {
+    "advisor": "M. Hasan",
+    "segment": "Emerald",
+    "kyc_expiry": "2026-10-15",
+    "last_contact": "2026-08-10",
+    "open_tickets": [
+      {
+        "id": "T-8812",
+        "type": "complaint",
+        "subject": "Unexpected admin fee on savings account"
+      }
+    ]
+  },
+  "C004": {
+    "advisor": "M. Hasan",
+    "segment": "Emerald",
+    "kyc_expiry": "2027-05-01",
+    "last_contact": "2026-09-02",
+    "open_tickets": []
+  }
+}

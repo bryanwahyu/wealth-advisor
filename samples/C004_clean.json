@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261014T132941-91a85f",
+  "client_id": "C004",
+  "status": "completed",
+  "error": null,
+  "generated_at": "2026-10-14T13:29:42.054244+00:00",
+  "as_of": "2026-09-30",
+  "client": {
+    "name": "Dewi Lestari",
+    "risk_profile": "moderate",
+    "currency": "IDR",
+    "monthly_income": 45000000.0
+  },
+  "risk": {
+    "score": 0,
+    "level": "low",
+    "history": {
+      "status": "ok",
+      "previous_runs": 0,
+      "trend": "First analysis for this client."
+    }
+  },
+  "briefing": {
+    "text": "Dewi Lestari (moderate profile) has a risk score of 0/100 with 0 critical and 0 high-severity findings. First analysis for this client.",
+    "source": "template"
+  },
+  "recommendations": [],
+  "findings": [],
+  "review": {
+    "outcome": "not_required",
+    "decisions": [],
+    "reviewer": null
+  },
+  "metrics": {
+    "as_of": "2026-09-30",
+    "transaction_count": 102,
+    "complete_months": [
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "monthly_cashflow": {
+      "2026-04": {
+        "inflow": 45000000.0,
+        "spending": 27587000.0,
+        "transfers_out": 0.0,
+        "invested": 8000000.0,
+        "net": 9413000.0
+      },
+      "2026-05": {
+        "inflow": 45000000.0,
+        "spending": 26518000.0,
+        "transfers_out": 0.0,
+        "invested": 8000000.0,
+        "net": 10482000.0
+      },
+      "2026-06": {
+        "inflow": 45000000.0,
+        "spending": 27278000.0,
+        "transfers_out": 0.0,
+        "invested": 8000000.0,
+        "net": 9722000.0
+      },
+      "2026-07": {
+        "inflow": 45000000.0,
+        "spending": 25862000.0,
+        "transfers_out": 0.0,
+        "invested": 8000000.0,
+        "net": 11138000.0
+      },
+      "2026-08": {
+        "inflow": 45000000.0,
+        "spending": 26487000.0,
+        "transfers_out": 0.0,
+        "invested": 8000000.0,
+        "net": 10513000.0
+      },
+      "2026-09": {
+        "inflow": 45000000.0,
+        "spending": 28024000.0,
+        "transfers_out": 0.0,
+        "invested": 8000000.0,
+        "net": 8976000.0
+      }
+    },
+    "avg_monthly_spending": 26959333.33,
+    "avg_monthly_inflow": 45000000.0,
+    "savings_rate": 0.4009,
+    "emergency_fund_months": 6.68,
+    "portfolio": {
+      "total_value": 660150000.0,
+      "allocation": {
+        "equity": 0.209,
+        "bond": 0.5183,
+        "cash": 0.2727
+      },
+      "risky_share": 0.209,
+      "crypto_share": 0.0,
+      "cash": 180000000.0,
+      "unrealized_pl": 23150000.0
+    }
+  },
+  "positions": [
+    {
+      "symbol": "BBRI",
+      "asset_class": "equity",
+      "value": 138000000.0,
+      "price": 4600.0,
+      "price_source": "market",
+      "change_30d": 0.01,
+      "unrealized_pl": 9000000.0,
+      "weight": 0.209
+    },
+    {
+      "symbol": "RD-SUCORINVEST-BOND",
+      "asset_class": "bond",
+      "value": 241800000.0,
+      "price": 2015.0,
+      "price_source": "market",
+      "change_30d": 0.004,
+      "unrealized_pl": 13800000.0,
+      "weight": 0.3663
+    },
+    {
+      "symbol": "ORI-025",
+      "asset_class": "bond",
+      "value": 100350000.0,
+      "price": 1003500.0,
+      "price_source": "market",
+      "change_30d": 0.0,
+      "unrealized_pl": 350000.0,
+      "weight": 0.152
+    },
+    {
+      "symbol": "CASH-IDR",
+      "asset_class": "cash",
+      "value": 180000000.0,
+      "price": 1.0,
+      "price_source": "par",
+      "change_30d": null,
+      "unrealized_pl": 0.0,
+      "weight": 0.2727
+    }
+  ],
+  "data_quality": {
+    "sources": {
+      "client_data": "live",
+      "crm": "live",
+      "market": "live"
+    },
+    "issues": []
+  },
+  "memory": {
+    "persisted": true,
+    "backend": "sqlite"
+  },
+  "execution": [
+    {
+      "step": "fetch_client_data",
+      "agent": "data_fetcher",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "sources": {
+          "client_data": "live",
+          "crm": "live",
+          "market": "live"
+        },
+        "transactions": 102,
+        "holdings": 4,
+        "as_of": "2026-09-30"
+      }
+    },
+    {
+      "step": "analyze",
+      "agent": "analyzer",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "risk_score": 0,
+        "finding_count": 0,
+        "history": {
+          "status": "ok",
+          "previous_runs": 0,
+          "trend": "First analysis for this client."
+        }
+      }
+    },
+    {
+      "step": "advise",
+      "agent": "advisor",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "recommendations": 0,
+        "needs_review": false,
+        "briefing_source": "template"
+      }
+    },
+    {
+      "step": "human_review",
+      "agent": "auto",
+      "ok": true,
+      "outcome": "not_required"
+    },
+    {
+      "step": "persist",
+      "agent": "orchestrator",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

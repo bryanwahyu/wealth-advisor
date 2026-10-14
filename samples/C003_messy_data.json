@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261014T132940-694b46",
+  "client_id": "C003",
+  "status": "completed_with_warnings",
+  "error": null,
+  "generated_at": "2026-10-14T13:29:41.967228+00:00",
+  "as_of": "2026-09-30",
+  "client": {
+    "name": "Budi Santoso",
+    "risk_profile": "aggressive",
+    "currency": "IDR",
+    "monthly_income": 60000000.0
+  },
+  "risk": {
+    "score": 24,
+    "level": "low",
+    "history": {
+      "status": "ok",
+      "previous_runs": 0,
+      "trend": "First analysis for this client."
+    }
+  },
+  "briefing": {
+    "text": "Budi Santoso (aggressive profile) has a risk score of 24/100 with 0 critical and 0 high-severity findings. First analysis for this client. First action: Propose trimming ANTM toward the single-position limit. Data gaps: transaction amount missing or non-numeric; dropped; transaction date '2026-13-45' unparseable; dropped; transaction amount missing or non-numeric; dropped.",
+    "source": "template"
+  },
+  "recommendations": [
+    {
+      "id": "REC-CONCENTRATION",
+      "priority": 2,
+      "action": "Propose trimming ANTM toward the single-position limit",
+      "rationale": "ANTM is 30% of the portfolio",
+      "related_findings": [
+        "CONCENTRATION"
+      ],
+      "requires_approval": true,
+      "status": "approved",
+      "reviewer_note": "auto-approved (no human reviewer configured)"
+    },
+    {
+      "id": "REC-DRAWDOWN",
+      "priority": 3,
+      "action": "Review investment thesis for GOTO",
+      "rationale": "GOTO down 18% in 30 days",
+      "related_findings": [
+        "DRAWDOWN"
+      ],
+      "requires_approval": false,
+      "status": "approved",
+      "reviewer_note": "auto-approved (no human reviewer configured)"
+    }
+  ],
+  "findings": [
+    {
+      "code": "CONCENTRATION",
+      "category": "portfolio",
+      "severity": "medium",
+      "title": "ANTM is 30% of the portfolio",
+      "detail": "Single-position limit is 30%.",
+      "evidence": {
+        "symbol": "ANTM",
+        "weight": 0.3012
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "DRAWDOWN",
+      "category": "portfolio",
+      "severity": "medium",
+      "title": "GOTO down 18% in 30 days",
+      "detail": "Position weight 15%; unrealized P/L -62,000,000.",
+      "evidence": {
+        "symbol": "GOTO",
+        "change_30d": -0.18,
+        "weight": 0.1521
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "STALE_PRICES",
+      "category": "portfolio",
+      "severity": "low",
+      "title": "Portfolio valued with non-live prices",
+      "detail": "PRIVATE-FUND-X priced from fallback sources; allocation figures are approximate.",
+      "evidence": {
+        "symbols": [
+          "PRIVATE-FUND-X"
+        ]
+      },
+      "transaction_ids": [],
+      "recurring": false
+    }
+  ],
+  "review": {
+    "outcome": "reviewed",
+    "decisions": [
+      {
+        "id": "REC-CONCENTRATION",
+        "decision": "approve",
+        "reviewer": "auto",
+        "note": "auto-approved (no human reviewer configured)"
+      },
+      {
+        "id": "REC-DRAWDOWN",
+        "decision": "approve",
+        "reviewer": "auto",
+        "note": "auto-approved (no human reviewer configured)"
+      }
+    ],
+    "pending": [],
+    "unknown_ids": [],
+    "reviewer": "auto"
+  },
+  "metrics": {
+    "as_of": "2026-09-30",
+    "transaction_count": 93,
+    "complete_months": [
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "monthly_cashflow": {
+      "2026-04": {
+        "inflow": 60000000.0,
+        "spending": 36258000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 23742000.0
+      },
+      "2026-05": {
+        "inflow": 60000000.0,
+        "spending": 38531000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 21469000.0
+      },
+      "2026-06": {
+        "inflow": 60000000.0,
+        "spending": 40785000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 19215000.0
+      },
+      "2026-07": {
+        "inflow": 60000000.0,
+        "spending": 42019000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 17981000.0
+      },
+      "2026-08": {
+        "inflow": 60000000.0,
+        "spending": 39850000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 20150000.0
+      },
+      "2026-09": {
+        "inflow": 60000000.0,
+        "spending": 41708000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 18292000.0
+      }
+    },
+    "avg_monthly_spending": 39858500.0,
+    "avg_monthly_inflow": 60000000.0,
+    "savings_rate": 0.3357,
+    "emergency_fund_months": 5.27,
+    "portfolio": {
+      "total_value": 841500000.0,
+      "allocation": {
+        "equity": 0.7504,
+        "cash": 0.2496
+      },
+      "risky_share": 0.7504,
+      "crypto_share": 0.0,
+      "cash": 210000000.0,
+      "unrealized_pl": -48500000.0
+    }
+  },
+  "positions": [
+    {
+      "symbol": "GOTO",
+      "asset_class": "equity",
+      "value": 128000000.0,
+      "price": 64.0,
+      "price_source": "market",
+      "change_30d": -0.18,
+      "unrealized_pl": -62000000.0,
+      "weight": 0.1521
+    },
+    {
+      "symbol": "ANTM",
+      "asset_class": "equity",
+      "value": 253500000.0,
+      "price": 1690.0,
+      "price_source": "market",
+      "change_30d": 0.03,
+      "unrealized_pl": 13500000.0,
+      "weight": 0.3012
+    },
+    {
+      "symbol": "PRIVATE-FUND-X",
+      "asset_class": "equity",
+      "value": 250000000.0,
+      "price": 250000000.0,
+      "price_source": "cost_basis",
+      "change_30d": null,
+      "unrealized_pl": 0.0,
+      "weight": 0.2971
+    },
+    {
+      "symbol": "CASH-IDR",
+      "asset_class": "cash",
+      "value": 210000000.0,
+      "price": 1.0,
+      "price_source": "par",
+      "change_30d": null,
+      "unrealized_pl": 0.0,
+      "weight": 0.2496
+    }
+  ],
+  "data_quality": {
+    "sources": {
+      "client_data": "live",
+      "crm": "not_found",
+      "market": "live"
+    },
+    "issues": [
+      {
+        "source": "client_data",
+        "message": "transaction amount missing or non-numeric; dropped",
+        "record_id": "C003-0011"
+      },
+      {
+        "source": "client_data",
+        "message": "transaction date '2026-13-45' unparseable; dropped",
+        "record_id": "C003-0021"
+      },
+      {
+        "source": "client_data",
+        "message": "transaction amount missing or non-numeric; dropped",
+        "record_id": "C003-0041"
+      },
+      {
+        "source": "client_data",
+        "message": "duplicate transaction id; dropped",
+        "record_id": "C003-0031"
+      },
+      {
+        "source": "client_data",
+        "message": "holding without symbol; dropped",
+        "record_id": null
+      },
+      {
+        "source": "client_data",
+        "message": "monthly_income missing; inferred 60,000,000 from income transactions",
+        "record_id": null
+      },
+      {
+        "source": "crm",
+        "message": "CRM data missing (CRM has no record for C003 (HTTP 404)); relationship checks skipped",
+        "record_id": null
+      },
+      {
+        "source": "market",
+        "message": "no quote for PRIVATE-FUND-X; valued at last known price or cost",
+        "record_id": null
+      }
+    ]
+  },
+  "memory": {
+    "persisted": true,
+    "backend": "sqlite"
+  },
+  "execution": [
+    {
+      "step": "fetch_client_data",
+      "agent": "data_fetcher",
+      "ok": true,
+      "degraded": true,
+      "error": null,
+      "output": {
+        "sources": {
+          "client_data": "live",
+          "crm": "not_found",
+          "market": "live"
+        },
+        "transactions": 93,
+        "holdings": 4,
+        "as_of": "2026-09-30"
+      }
+    },
+    {
+      "step": "analyze",
+      "agent": "analyzer",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "risk_score": 24,
+        "finding_count": 3,
+        "history": {
+          "status": "ok",
+          "previous_runs": 0,
+          "trend": "First analysis for this client."
+        }
+      }
+    },
+    {
+      "step": "advise",
+      "agent": "advisor",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "recommendations": 2,
+        "needs_review": true,
+        "briefing_source": "template"
+      }
+    },
+    {
+      "step": "human_review",
+      "agent": "auto",
+      "ok": true,
+      "outcome": "reviewed"
+    },
+    {
+      "step": "persist",
+      "agent": "orchestrator",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261014T132942-09f3f4",
+  "client_id": "C005",
+  "status": "failed",
+  "error": "fetch_client_data: client data unavailable: C005.json is not valid JSON: Expecting property name enclosed in double quotes: line 1 column 46 (char 45)",
+  "generated_at": "2026-10-14T13:29:42.456398+00:00",
+  "as_of": null,
+  "client": null,
+  "risk": {
+    "score": null,
+    "level": null,
+    "history": null
+  },
+  "briefing": null,
+  "recommendations": [],
+  "findings": [],
+  "review": null,
+  "metrics": {},
+  "positions": null,
+  "data_quality": {
+    "sources": null,
+    "issues": []
+  },
+  "memory": null,
+  "execution": [
+    {
+      "step": "fetch_client_data",
+      "agent": "data_fetcher",
+      "ok": false,
+      "degraded": false,
+      "error": "client data unavailable: C005.json is not valid JSON: Expecting property name enclosed in double quotes: line 1 column 46 (char 45)",
+      "output": {}
+    }
+  ]
+}

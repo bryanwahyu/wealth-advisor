@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261014T132940-dd10d9",
+  "client_id": "C002",
+  "status": "completed_with_warnings",
+  "error": null,
+  "generated_at": "2026-10-14T13:29:40.533975+00:00",
+  "as_of": "2026-09-30",
+  "client": {
+    "name": "Siti Rahayu",
+    "risk_profile": "conservative",
+    "currency": "IDR",
+    "monthly_income": 30000000.0
+  },
+  "risk": {
+    "score": 38,
+    "level": "moderate",
+    "history": {
+      "status": "ok",
+      "previous_runs": 0,
+      "trend": "First analysis for this client."
+    }
+  },
+  "briefing": {
+    "text": "Siti Rahayu (conservative profile) has a risk score of 38/100 with 0 critical and 1 high-severity findings. First analysis for this client. Most urgent: Spending exceeded income for 3 consecutive months. First action: Review budget with client; spending has exceeded income. Data gaps: holdings missing; portfolio checks will be skipped.",
+    "source": "template"
+  },
+  "recommendations": [
+    {
+      "id": "REC-NEGATIVE_CASHFLOW",
+      "priority": 2,
+      "action": "Review budget with client; spending has exceeded income",
+      "rationale": "Spending exceeded income for 3 consecutive months",
+      "related_findings": [
+        "NEGATIVE_CASHFLOW"
+      ],
+      "requires_approval": false,
+      "status": "approved",
+      "reviewer_note": "auto-approved: low risk, no actions need sign-off"
+    },
+    {
+      "id": "REC-OPEN_COMPLAINT",
+      "priority": 2,
+      "action": "Resolve open complaint before any product conversation",
+      "rationale": "1 open complaint(s)",
+      "related_findings": [
+        "OPEN_COMPLAINT"
+      ],
+      "requires_approval": false,
+      "status": "approved",
+      "reviewer_note": "auto-approved: low risk, no actions need sign-off"
+    },
+    {
+      "id": "REC-KYC_EXPIRING",
+      "priority": 3,
+      "action": "Schedule KYC renewal before 2026-10-15",
+      "rationale": "KYC expires in 15 days",
+      "related_findings": [
+        "KYC_EXPIRING"
+      ],
+      "requires_approval": false,
+      "status": "approved",
+      "reviewer_note": "auto-approved: low risk, no actions need sign-off"
+    }
+  ],
+  "findings": [
+    {
+      "code": "NEGATIVE_CASHFLOW",
+      "category": "trend",
+      "severity": "high",
+      "title": "Spending exceeded income for 3 consecutive months",
+      "detail": "Net cash flow IDR 14,361,000, IDR 14,523,000, IDR 16,219,000 deficit in 2026-07, 2026-08, 2026-09.",
+      "evidence": {
+        "months": [
+          "2026-07",
+          "2026-08",
+          "2026-09"
+        ],
+        "net": [
+          -14361000.0,
+          -14523000.0,
+          -16219000.0
+        ]
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "KYC_EXPIRING",
+      "category": "relationship",
+      "severity": "medium",
+      "title": "KYC expires in 15 days",
+      "detail": "KYC expiry 2026-10-15.",
+      "evidence": {
+        "kyc_expiry": "2026-10-15",
+        "days_left": 15
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "OPEN_COMPLAINT",
+      "category": "relationship",
+      "severity": "medium",
+      "title": "1 open complaint(s)",
+      "detail": "Unexpected admin fee on savings account",
+      "evidence": {
+        "tickets": [
+          "T-8812"
+        ]
+      },
+      "transaction_ids": [],
+      "recurring": false
+    }
+  ],
+  "review": {
+    "outcome": "not_required",
+    "decisions": [],
+    "reviewer": null
+  },
+  "metrics": {
+    "as_of": "2026-09-30",
+    "transaction_count": 102,
+    "complete_months": [
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "monthly_cashflow": {
+      "2026-04": {
+        "inflow": 30000000.0,
+        "spending": 29983000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": 17000.0
+      },
+      "2026-05": {
+        "inflow": 30000000.0,
+        "spending": 31890000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": -1890000.0
+      },
+      "2026-06": {
+        "inflow": 30000000.0,
+        "spending": 36428000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": -6428000.0
+      },
+      "2026-07": {
+        "inflow": 30000000.0,
+        "spending": 44361000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": -14361000.0
+      },
+      "2026-08": {
+        "inflow": 30000000.0,
+        "spending": 44523000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": -14523000.0
+      },
+      "2026-09": {
+        "inflow": 30000000.0,
+        "spending": 46219000.0,
+        "transfers_out": 0.0,
+        "invested": 0.0,
+        "net": -16219000.0
+      }
+    },
+    "avg_monthly_spending": 38900666.67,
+    "avg_monthly_inflow": 30000000.0,
+    "savings_rate": -0.2967,
+    "emergency_fund_months": null,
+    "portfolio": null
+  },
+  "positions": [],
+  "data_quality": {
+    "sources": {
+      "client_data": "live",
+      "crm": "live"
+    },
+    "issues": [
+      {
+        "source": "client_data",
+        "message": "holdings missing; portfolio checks will be skipped",
+        "record_id": null
+      }
+    ]
+  },
+  "memory": {
+    "persisted": true,
+    "backend": "sqlite"
+  },
+  "execution": [
+    {
+      "step": "fetch_client_data",
+      "agent": "data_fetcher",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "sources": {
+          "client_data": "live",
+          "crm": "live"
+        },
+        "transactions": 102,
+        "holdings": 0,
+        "as_of": "2026-09-30"
+      }
+    },
+    {
+      "step": "analyze",
+      "agent": "analyzer",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "risk_score": 38,
+        "finding_count": 3,
+        "history": {
+          "status": "ok",
+          "previous_runs": 0,
+          "trend": "First analysis for this client."
+        }
+      }
+    },
+    {
+      "step": "advise",
+      "agent": "advisor",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "recommendations": 3,
+        "needs_review": false,
+        "briefing_source": "template"
+      }
+    },
+    {
+      "step": "human_review",
+      "agent": "auto",
+      "ok": true,
+      "outcome": "not_required"
+    },
+    {
+      "step": "persist",
+      "agent": "orchestrator",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Single-node ScyllaDB for the long-term memory backend.
+#   docker compose up -d scylla
+#   python -m wealth_advisor --memory scylla run --all --review auto
+services:
+  scylla:
+    image: scylladb/scylla:6.2
+    container_name: wealth-advisor-scylla
+    command: --smp 1 --memory 750M --overprovisioned 1 --developer-mode 1
+    ports:
+      - "9042:9042"
+    volumes:
+      - scylla-data:/var/lib/scylla
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'DESCRIBE KEYSPACES' >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  scylla-data:

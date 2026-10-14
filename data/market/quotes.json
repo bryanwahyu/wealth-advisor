@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-09-30",
+  "quotes": {
+    "BBCA": {
+      "price": 9700,
+      "change_30d": -0.02
+    },
+    "TLKM": {
+      "price": 2900,
+      "change_30d": -0.06
+    },
+    "BTC": {
+      "price": 1180000000,
+      "change_30d": -0.22
+    },
+    "RD-SUCORINVEST-BOND": {
+      "price": 2015,
+      "change_30d": 0.004
+    },
+    "BBRI": {
+      "price": 4600,
+      "change_30d": 0.01
+    },
+    "ORI-025": {
+      "price": 1003500,
+      "change_30d": 0.0
+    },
+    "GOTO": {
+      "price": 64,
+      "change_30d": -0.18
+    },
+    "ANTM": {
+      "price": 1690,
+      "change_30d": 0.03
+    }
+  }
+}

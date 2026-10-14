@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wealth-advisor"
+version = "0.1.0"
+description = "Lightweight multi-agent Wealth Advisor Assistant"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+scylla = ["scylla-driver>=3.26"]
+llm = ["anthropic"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+wealth-advisor = "wealth_advisor.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["wealth_advisor*"]
+
+[tool.setuptools.package-data]
+"wealth_advisor.memory" = ["migrations/*.cql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,17 @@
+20:29:46 INFO    [orchestrator] run.start              run started for client C001
+20:29:46 INFO    [orchestrator] route                  fetch_client_data -> data_fetcher
+20:29:46 WARNING [data_fetcher] tool.error             crm.get_client attempt 1 failed: CRM returned HTTP 503 Service Unavailable
+20:29:46 WARNING [data_fetcher] tool.error             crm.get_client attempt 2 failed: CRM returned HTTP 503 Service Unavailable
+20:29:46 WARNING [data_fetcher] tool.error             crm.get_client attempt 3 failed: CRM returned HTTP 503 Service Unavailable
+20:29:46 WARNING [data_fetcher] tool.error             market.get_quotes attempt 1 failed: market data provider unreachable
+20:29:46 WARNING [data_fetcher] tool.error             market.get_quotes attempt 2 failed: market data provider unreachable
+20:29:46 WARNING [data_fetcher] tool.error             market.get_quotes attempt 3 failed: market data provider unreachable
+20:29:46 WARNING [data_fetcher] tool.fallback          market.get_quotes using fallback after: market data provider unreachable
+20:29:46 INFO    [data_fetcher] agent.task.done        fetch_client_data
+20:29:46 INFO    [orchestrator] route                  analyze -> analyzer
+20:29:46 INFO    [analyzer    ] agent.task.done        analyze
+20:29:46 INFO    [orchestrator] route                  advise -> advisor
+20:29:46 INFO    [advisor     ] agent.task.done        advise
+20:29:46 INFO    [orchestrator] hitl.requested         review requested from defer
+20:29:46 INFO    [orchestrator] hitl.result            review outcome: deferred
+20:29:46 INFO    [orchestrator] run.done               run finished: pending_review

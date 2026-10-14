@@ -1,0 +1,16 @@
+{
+  "reviewer": "r.wijaya",
+  "decisions": [
+    {"id": "REC-POSSIBLE_STRUCTURING", "decision": "approve", "note": "STR draft sent to compliance"},
+    {"id": "REC-LARGE_OUTFLOW", "decision": "modify", "action": "Visit client in person to verify the HK transfer before any further wire", "note": "phone verification not enough for this amount"},
+    {"id": "REC-CONCENTRATION", "decision": "reject", "note": "BBCA position is a long-term dividend holding agreed with client"},
+    {"id": "REC-CRYPTO_OVEREXPOSURE", "decision": "approve"},
+    {"id": "REC-RISK_PROFILE_MISMATCH", "decision": "approve"},
+    {"id": "REC-HIGH_VELOCITY", "decision": "approve"},
+    {"id": "REC-AMOUNT_OUTLIER", "decision": "approve"},
+    {"id": "REC-DRAWDOWN", "decision": "approve"},
+    {"id": "REC-KYC_EXPIRING", "decision": "approve"},
+    {"id": "REC-SPENDING_SPIKE", "decision": "approve"},
+    {"id": "REC-STALE_RELATIONSHIP", "decision": "approve"}
+  ]
+}

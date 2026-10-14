@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261014T132946-d03abd",
+  "client_id": "C001",
+  "status": "pending_review",
+  "error": null,
+  "generated_at": "2026-10-14T13:29:46.969635+00:00",
+  "as_of": "2026-09-30",
+  "client": {
+    "name": "Andi Pratama",
+    "risk_profile": "moderate",
+    "currency": "IDR",
+    "monthly_income": 250000000.0
+  },
+  "risk": {
+    "score": 85,
+    "level": "critical",
+    "history": {
+      "status": "ok",
+      "previous_runs": 0,
+      "trend": "First analysis for this client."
+    }
+  },
+  "briefing": {
+    "text": "Andi Pratama (moderate profile) has a risk score of 85/100 with 2 critical and 3 high-severity findings. First analysis for this client. Most urgent: Large outflow: new counterparty, cross-border (HK); Transfers clustered just below reporting threshold; Unusually large shopping payment. First action: Call client to verify purpose and beneficiary of large outflow(s) C001-0103. Data gaps: CRM data missing (CRM returned HTTP 503 Service Unavailable); relationship checks skipped; live prices unavailable (market data provider unreachable); using client-file prices.",
+    "source": "template"
+  },
+  "recommendations": [
+    {
+      "id": "REC-LARGE_OUTFLOW",
+      "priority": 1,
+      "action": "Call client to verify purpose and beneficiary of large outflow(s) C001-0103",
+      "rationale": "Large outflow: new counterparty, cross-border (HK)",
+      "related_findings": [
+        "LARGE_OUTFLOW"
+      ],
+      "requires_approval": true,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-POSSIBLE_STRUCTURING",
+      "priority": 1,
+      "action": "Escalate transactions C001-0104, C001-0105, C001-0106 to compliance for suspicious-transaction review; hold further large transfers until cleared",
+      "rationale": "Transfers clustered just below reporting threshold",
+      "related_findings": [
+        "POSSIBLE_STRUCTURING"
+      ],
+      "requires_approval": true,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-CONCENTRATION",
+      "priority": 2,
+      "action": "Propose trimming BBCA toward the single-position limit",
+      "rationale": "BBCA is 45% of the portfolio",
+      "related_findings": [
+        "CONCENTRATION"
+      ],
+      "requires_approval": true,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-CRYPTO_OVEREXPOSURE",
+      "priority": 2,
+      "action": "Propose reducing crypto to within the 5% policy limit, or re-assess the client's risk profile",
+      "rationale": "Crypto 16% exceeds moderate limit 5%",
+      "related_findings": [
+        "CRYPTO_OVEREXPOSURE"
+      ],
+      "requires_approval": true,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-RISK_PROFILE_MISMATCH",
+      "priority": 2,
+      "action": "Propose rebalancing equity/crypto from 69% to at most 60%, or re-assess the risk profile",
+      "rationale": "Risky assets 69% exceed moderate limit 60%",
+      "related_findings": [
+        "RISK_PROFILE_MISMATCH"
+      ],
+      "requires_approval": true,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-HIGH_VELOCITY",
+      "priority": 2,
+      "action": "Verify transaction burst C001-0108, C001-0109, C001-0110, C001-0111, C001-0112, C001-0113 \u2026 with client (possible account compromise)",
+      "rationale": "Burst of outgoing transactions",
+      "related_findings": [
+        "HIGH_VELOCITY"
+      ],
+      "requires_approval": false,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-AMOUNT_OUTLIER",
+      "priority": 3,
+      "action": "Confirm 1 unusual payment(s) with client: C001-0116",
+      "rationale": "Unusually large shopping payment",
+      "related_findings": [
+        "AMOUNT_OUTLIER"
+      ],
+      "requires_approval": false,
+      "status": "pending_review",
+      "reviewer_note": null
+    },
+    {
+      "id": "REC-SPENDING_SPIKE",
+      "priority": 3,
+      "action": "Discuss 2026-09 spending increase with client",
+      "rationale": "Spending in 2026-09 up 60% vs trailing average",
+      "related_findings": [
+        "SPENDING_SPIKE"
+      ],
+      "requires_approval": false,
+      "status": "pending_review",
+      "reviewer_note": null
+    }
+  ],
+  "findings": [
+    {
+      "code": "LARGE_OUTFLOW",
+      "category": "transaction",
+      "severity": "critical",
+      "title": "Large outflow: new counterparty, cross-border (HK)",
+      "detail": "IDR 420,000,000 to Lucky Star Trading Ltd on 2026-09-12 equals 1.7x monthly income.",
+      "evidence": {
+        "income_ratio": 1.68,
+        "new_counterparty": true,
+        "country": "HK"
+      },
+      "transaction_ids": [
+        "C001-0103"
+      ],
+      "recurring": false
+    },
+    {
+      "code": "POSSIBLE_STRUCTURING",
+      "category": "transaction",
+      "severity": "critical",
+      "title": "Transfers clustered just below reporting threshold",
+      "detail": "3 transfers between 2026-09-20 and 2026-09-22 each sit within 10% below IDR 500,000,000 (total IDR 1,437,000,000). Escalate to compliance.",
+      "evidence": {
+        "count": 3,
+        "total": 1437000000.0,
+        "counterparties": [
+          "PT Sinar Abadi Jaya"
+        ]
+      },
+      "transaction_ids": [
+        "C001-0104",
+        "C001-0105",
+        "C001-0106"
+      ],
+      "recurring": false
+    },
+    {
+      "code": "AMOUNT_OUTLIER",
+      "category": "transaction",
+      "severity": "high",
+      "title": "Unusually large shopping payment",
+      "detail": "IDR 38,000,000 to Plaza Indonesia Boutique on 2026-09-15 is 11.6 robust z-scores above the typical IDR 3,168,000.",
+      "evidence": {
+        "robust_z": 11.63,
+        "median": 3168000.0,
+        "mad": 2020000.0
+      },
+      "transaction_ids": [
+        "C001-0116"
+      ],
+      "recurring": false
+    },
+    {
+      "code": "CRYPTO_OVEREXPOSURE",
+      "category": "portfolio",
+      "severity": "high",
+      "title": "Crypto 16% exceeds moderate limit 5%",
+      "detail": "Crypto allocation is outside policy for this risk profile.",
+      "evidence": {
+        "crypto_share": 0.1558,
+        "limit": 0.05
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "RISK_PROFILE_MISMATCH",
+      "category": "portfolio",
+      "severity": "high",
+      "title": "Risky assets 69% exceed moderate limit 60%",
+      "detail": "Equity and crypto exposure is above what the client's risk profile allows.",
+      "evidence": {
+        "risky_share": 0.6914,
+        "limit": 0.6
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "CONCENTRATION",
+      "category": "portfolio",
+      "severity": "medium",
+      "title": "BBCA is 45% of the portfolio",
+      "detail": "Single-position limit is 30%.",
+      "evidence": {
+        "symbol": "BBCA",
+        "weight": 0.4488
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "HIGH_VELOCITY",
+      "category": "transaction",
+      "severity": "medium",
+      "title": "Burst of outgoing transactions",
+      "detail": "8 outflows on 2026-09-27 (limit 6), total IDR 16,000,000.",
+      "evidence": {
+        "count": 8,
+        "channels": [
+          "ewallet"
+        ]
+      },
+      "transaction_ids": [
+        "C001-0108",
+        "C001-0109",
+        "C001-0110",
+        "C001-0111",
+        "C001-0112",
+        "C001-0113",
+        "C001-0114",
+        "C001-0115"
+      ],
+      "recurring": false
+    },
+    {
+      "code": "SPENDING_SPIKE",
+      "category": "trend",
+      "severity": "medium",
+      "title": "Spending in 2026-09 up 60% vs trailing average",
+      "detail": "IDR 133,112,000 spent in 2026-09 against an average of IDR 83,257,400 over 5 prior months.",
+      "evidence": {
+        "month": "2026-09",
+        "ratio": 1.6,
+        "baseline": 83257400.0
+      },
+      "transaction_ids": [],
+      "recurring": false
+    },
+    {
+      "code": "STALE_PRICES",
+      "category": "portfolio",
+      "severity": "low",
+      "title": "Portfolio valued with non-live prices",
+      "detail": "BBCA, TLKM, BTC, RD-SUCORINVEST-BOND priced from fallback sources; allocation figures are approximate.",
+      "evidence": {
+        "symbols": [
+          "BBCA",
+          "TLKM",
+          "BTC",
+          "RD-SUCORINVEST-BOND"
+        ]
+      },
+      "transaction_ids": [],
+      "recurring": false
+    }
+  ],
+  "review": {
+    "outcome": "deferred",
+    "decisions": [],
+    "unknown_ids": [],
+    "reviewer": "defer"
+  },
+  "metrics": {
+    "as_of": "2026-09-30",
+    "transaction_count": 116,
+    "complete_months": [
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "monthly_cashflow": {
+      "2026-04": {
+        "inflow": 250000000.0,
+        "spending": 82344000.0,
+        "transfers_out": 0.0,
+        "invested": 50000000.0,
+        "net": 117656000.0
+      },
+      "2026-05": {
+        "inflow": 250000000.0,
+        "spending": 83039000.0,
+        "transfers_out": 0.0,
+        "invested": 50000000.0,
+        "net": 116961000.0
+      },
+      "2026-06": {
+        "inflow": 250000000.0,
+        "spending": 83960000.0,
+        "transfers_out": 0.0,
+        "invested": 50000000.0,
+        "net": 116040000.0
+      },
+      "2026-07": {
+        "inflow": 250000000.0,
+        "spending": 82452000.0,
+        "transfers_out": 0.0,
+        "invested": 50000000.0,
+        "net": 117548000.0
+      },
+      "2026-08": {
+        "inflow": 250000000.0,
+        "spending": 84492000.0,
+        "transfers_out": 0.0,
+        "invested": 50000000.0,
+        "net": 115508000.0
+      },
+      "2026-09": {
+        "inflow": 1750000000.0,
+        "spending": 133112000.0,
+        "transfers_out": 1857000000.0,
+        "invested": 50000000.0,
+        "net": -290112000.0
+      }
+    },
+    "avg_monthly_spending": 91566500.0,
+    "avg_monthly_inflow": 500000000.0,
+    "savings_rate": 0.8169,
+    "emergency_fund_months": 9.83,
+    "portfolio": {
+      "total_value": 8779500000.0,
+      "allocation": {
+        "equity": 0.5356,
+        "crypto": 0.1558,
+        "bond": 0.206,
+        "cash": 0.1025
+      },
+      "risky_share": 0.6914,
+      "crypto_share": 0.1558,
+      "cash": 900000000.0,
+      "unrealized_pl": 409500000.0
+    }
+  },
+  "positions": [
+    {
+      "symbol": "BBCA",
+      "asset_class": "equity",
+      "value": 3940000000.0,
+      "price": 9850.0,
+      "price_source": "stale",
+      "change_30d": null,
+      "unrealized_pl": 380000000.0,
+      "weight": 0.4488
+    },
+    {
+      "symbol": "TLKM",
+      "asset_class": "equity",
+      "value": 762500000.0,
+      "price": 3050.0,
+      "price_source": "stale",
+      "change_30d": null,
+      "unrealized_pl": -87500000.0,
+      "weight": 0.0869
+    },
+    {
+      "symbol": "BTC",
+      "asset_class": "crypto",
+      "value": 1368000000.0,
+      "price": 1520000000.0,
+      "price_source": "stale",
+      "change_30d": null,
+      "unrealized_pl": 63000000.0,
+      "weight": 0.1558
+    },
+    {
+      "symbol": "RD-SUCORINVEST-BOND",
+      "asset_class": "bond",
+      "value": 1809000000.0,
+      "price": 2010.0,
+      "price_source": "stale",
+      "change_30d": null,
+      "unrealized_pl": 54000000.0,
+      "weight": 0.206
+    },
+    {
+      "symbol": "CASH-IDR",
+      "asset_class": "cash",
+      "value": 900000000.0,
+      "price": 1.0,
+      "price_source": "par",
+      "change_30d": null,
+      "unrealized_pl": 0.0,
+      "weight": 0.1025
+    }
+  ],
+  "data_quality": {
+    "sources": {
+      "client_data": "live",
+      "crm": "unavailable",
+      "market": "fallback"
+    },
+    "issues": [
+      {
+        "source": "crm",
+        "message": "CRM data missing (CRM returned HTTP 503 Service Unavailable); relationship checks skipped",
+        "record_id": null
+      },
+      {
+        "source": "market",
+        "message": "live prices unavailable (market data provider unreachable); using client-file prices",
+        "record_id": null
+      }
+    ]
+  },
+  "memory": {
+    "persisted": true,
+    "backend": "sqlite"
+  },
+  "execution": [
+    {
+      "step": "fetch_client_data",
+      "agent": "data_fetcher",
+      "ok": true,
+      "degraded": true,
+      "error": null,
+      "output": {
+        "sources": {
+          "client_data": "live",
+          "crm": "unavailable",
+          "market": "fallback"
+        },
+        "transactions": 116,
+        "holdings": 5,
+        "as_of": "2026-09-30"
+      }
+    },
+    {
+      "step": "analyze",
+      "agent": "analyzer",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "risk_score": 85,
+        "finding_count": 9,
+        "history": {
+          "status": "ok",
+          "previous_runs": 0,
+          "trend": "First analysis for this client."
+        }
+      }
+    },
+    {
+      "step": "advise",
+      "agent": "advisor",
+      "ok": true,
+      "degraded": false,
+      "error": null,
+      "output": {
+        "recommendations": 8,
+        "needs_review": true,
+        "briefing_source": "template"
+      }
+    },
+    {
+      "step": "human_review",
+      "agent": "defer",
+      "ok": true,
+      "outcome": "deferred"
+    },
+    {
+      "step": "persist",
+      "agent": "orchestrator",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

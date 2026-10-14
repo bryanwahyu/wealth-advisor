@@ -1,0 +1,928 @@
+{
+  "client_id": "C002",
+  "name": "Siti Rahayu",
+  "risk_profile": "conservative",
+  "monthly_income": 30000000,
+  "currency": "IDR",
+  "statement_end": "2026-09-30",
+  "transactions": [
+    {
+      "id": "C002-0001",
+      "date": "2026-04-25",
+      "amount": 30000000.0,
+      "category": "salary",
+      "counterparty": "PT Employer Payroll",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0002",
+      "date": "2026-04-02",
+      "amount": -7500000.0,
+      "category": "housing",
+      "counterparty": "Apartment Management",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0003",
+      "date": "2026-04-05",
+      "amount": -3323000.0,
+      "category": "utilities",
+      "counterparty": "PLN",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0004",
+      "date": "2026-04-06",
+      "amount": -490000.0,
+      "category": "subscriptions",
+      "counterparty": "Telkomsel",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0005",
+      "date": "2026-04-01",
+      "amount": -2228000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0006",
+      "date": "2026-04-02",
+      "amount": -1244000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0007",
+      "date": "2026-04-03",
+      "amount": -589000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0008",
+      "date": "2026-04-10",
+      "amount": -2452000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0009",
+      "date": "2026-04-11",
+      "amount": -1078000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0010",
+      "date": "2026-04-12",
+      "amount": -524000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0011",
+      "date": "2026-04-16",
+      "amount": -3500000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0012",
+      "date": "2026-04-17",
+      "amount": -1555000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0013",
+      "date": "2026-04-18",
+      "amount": -641000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0014",
+      "date": "2026-04-24",
+      "amount": -2862000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0015",
+      "date": "2026-04-25",
+      "amount": -1338000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0016",
+      "date": "2026-04-26",
+      "amount": -659000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0017",
+      "date": "2026-05-25",
+      "amount": 30000000.0,
+      "category": "salary",
+      "counterparty": "PT Employer Payroll",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0018",
+      "date": "2026-05-02",
+      "amount": -7500000.0,
+      "category": "housing",
+      "counterparty": "Apartment Management",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0019",
+      "date": "2026-05-05",
+      "amount": -3252000.0,
+      "category": "utilities",
+      "counterparty": "PLN",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0020",
+      "date": "2026-05-06",
+      "amount": -490000.0,
+      "category": "subscriptions",
+      "counterparty": "Telkomsel",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0021",
+      "date": "2026-05-03",
+      "amount": -3081000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0022",
+      "date": "2026-05-04",
+      "amount": -1340000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0023",
+      "date": "2026-05-05",
+      "amount": -513000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0024",
+      "date": "2026-05-09",
+      "amount": -3231000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0025",
+      "date": "2026-05-10",
+      "amount": -1237000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0026",
+      "date": "2026-05-11",
+      "amount": -397000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0027",
+      "date": "2026-05-16",
+      "amount": -2566000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0028",
+      "date": "2026-05-17",
+      "amount": -1581000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0029",
+      "date": "2026-05-18",
+      "amount": -631000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0030",
+      "date": "2026-05-23",
+      "amount": -3912000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0031",
+      "date": "2026-05-24",
+      "amount": -1500000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0032",
+      "date": "2026-05-25",
+      "amount": -659000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0033",
+      "date": "2026-06-25",
+      "amount": 30000000.0,
+      "category": "salary",
+      "counterparty": "PT Employer Payroll",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0034",
+      "date": "2026-06-02",
+      "amount": -7500000.0,
+      "category": "housing",
+      "counterparty": "Apartment Management",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0035",
+      "date": "2026-06-05",
+      "amount": -3282000.0,
+      "category": "utilities",
+      "counterparty": "PLN",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0036",
+      "date": "2026-06-06",
+      "amount": -490000.0,
+      "category": "subscriptions",
+      "counterparty": "Telkomsel",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0037",
+      "date": "2026-06-03",
+      "amount": -3975000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0038",
+      "date": "2026-06-04",
+      "amount": -1533000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0039",
+      "date": "2026-06-05",
+      "amount": -431000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0040",
+      "date": "2026-06-11",
+      "amount": -3846000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0041",
+      "date": "2026-06-12",
+      "amount": -1682000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0042",
+      "date": "2026-06-13",
+      "amount": -477000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0043",
+      "date": "2026-06-17",
+      "amount": -4210000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0044",
+      "date": "2026-06-18",
+      "amount": -1737000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0045",
+      "date": "2026-06-19",
+      "amount": -692000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0046",
+      "date": "2026-06-25",
+      "amount": -4166000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0047",
+      "date": "2026-06-26",
+      "amount": -1682000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0048",
+      "date": "2026-06-27",
+      "amount": -725000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0049",
+      "date": "2026-07-25",
+      "amount": 30000000.0,
+      "category": "salary",
+      "counterparty": "PT Employer Payroll",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0050",
+      "date": "2026-07-02",
+      "amount": -7500000.0,
+      "category": "housing",
+      "counterparty": "Apartment Management",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0051",
+      "date": "2026-07-05",
+      "amount": -2988000.0,
+      "category": "utilities",
+      "counterparty": "PLN",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0052",
+      "date": "2026-07-06",
+      "amount": -490000.0,
+      "category": "subscriptions",
+      "counterparty": "Telkomsel",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0053",
+      "date": "2026-07-04",
+      "amount": -3783000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0054",
+      "date": "2026-07-05",
+      "amount": -1480000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0055",
+      "date": "2026-07-06",
+      "amount": -846000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0056",
+      "date": "2026-07-09",
+      "amount": -4525000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0057",
+      "date": "2026-07-10",
+      "amount": -2081000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0058",
+      "date": "2026-07-11",
+      "amount": -558000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0059",
+      "date": "2026-07-18",
+      "amount": -3450000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0060",
+      "date": "2026-07-19",
+      "amount": -1459000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0061",
+      "date": "2026-07-20",
+      "amount": -590000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0062",
+      "date": "2026-07-22",
+      "amount": -4349000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0063",
+      "date": "2026-07-23",
+      "amount": -1663000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0064",
+      "date": "2026-07-24",
+      "amount": -899000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0065",
+      "date": "2026-08-25",
+      "amount": 30000000.0,
+      "category": "salary",
+      "counterparty": "PT Employer Payroll",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0066",
+      "date": "2026-08-02",
+      "amount": -7500000.0,
+      "category": "housing",
+      "counterparty": "Apartment Management",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0067",
+      "date": "2026-08-05",
+      "amount": -2681000.0,
+      "category": "utilities",
+      "counterparty": "PLN",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0068",
+      "date": "2026-08-06",
+      "amount": -490000.0,
+      "category": "subscriptions",
+      "counterparty": "Telkomsel",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0069",
+      "date": "2026-08-01",
+      "amount": -3230000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0070",
+      "date": "2026-08-02",
+      "amount": -2325000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0071",
+      "date": "2026-08-03",
+      "amount": -782000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0072",
+      "date": "2026-08-08",
+      "amount": -4671000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0073",
+      "date": "2026-08-09",
+      "amount": -1469000.0,
+      "category": "dining",
+      "counterparty": "Kopi Kenangan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0074",
+      "date": "2026-08-10",
+      "amount": -567000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0075",
+      "date": "2026-08-16",
+      "amount": -5063000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0076",
+      "date": "2026-08-17",
+      "amount": -1343000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0077",
+      "date": "2026-08-18",
+      "amount": -886000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0078",
+      "date": "2026-08-22",
+      "amount": -3859000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0079",
+      "date": "2026-08-23",
+      "amount": -1528000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0080",
+      "date": "2026-08-24",
+      "amount": -429000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0081",
+      "date": "2026-09-25",
+      "amount": 30000000.0,
+      "category": "salary",
+      "counterparty": "PT Employer Payroll",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0082",
+      "date": "2026-09-02",
+      "amount": -7500000.0,
+      "category": "housing",
+      "counterparty": "Apartment Management",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0083",
+      "date": "2026-09-05",
+      "amount": -2617000.0,
+      "category": "utilities",
+      "counterparty": "PLN",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0084",
+      "date": "2026-09-06",
+      "amount": -490000.0,
+      "category": "subscriptions",
+      "counterparty": "Telkomsel",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0085",
+      "date": "2026-09-01",
+      "amount": -3417000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0086",
+      "date": "2026-09-02",
+      "amount": -2651000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0087",
+      "date": "2026-09-03",
+      "amount": -699000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0088",
+      "date": "2026-09-09",
+      "amount": -5182000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0089",
+      "date": "2026-09-10",
+      "amount": -1626000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0090",
+      "date": "2026-09-11",
+      "amount": -800000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0091",
+      "date": "2026-09-15",
+      "amount": -4224000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0092",
+      "date": "2026-09-16",
+      "amount": -1421000.0,
+      "category": "dining",
+      "counterparty": "Sate Khas Senayan",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0093",
+      "date": "2026-09-17",
+      "amount": -550000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0094",
+      "date": "2026-09-22",
+      "amount": -3369000.0,
+      "category": "groceries",
+      "counterparty": "Supermarket Ranch",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0095",
+      "date": "2026-09-23",
+      "amount": -3026000.0,
+      "category": "dining",
+      "counterparty": "Bebek Bengil",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0096",
+      "date": "2026-09-24",
+      "amount": -947000.0,
+      "category": "transport",
+      "counterparty": "Gojek",
+      "channel": "ewallet",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0097",
+      "date": "2026-07-18",
+      "amount": -4500000.0,
+      "category": "education",
+      "counterparty": "Universitas Indonesia",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0098",
+      "date": "2026-07-21",
+      "amount": -3200000.0,
+      "category": "healthcare",
+      "counterparty": "RS Pondok Indah",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0099",
+      "date": "2026-08-18",
+      "amount": -4500000.0,
+      "category": "education",
+      "counterparty": "Universitas Indonesia",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0100",
+      "date": "2026-08-21",
+      "amount": -3200000.0,
+      "category": "healthcare",
+      "counterparty": "RS Pondok Indah",
+      "channel": "card",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0101",
+      "date": "2026-09-18",
+      "amount": -4500000.0,
+      "category": "education",
+      "counterparty": "Universitas Indonesia",
+      "channel": "transfer",
+      "country": "ID"
+    },
+    {
+      "id": "C002-0102",
+      "date": "2026-09-21",
+      "amount": -3200000.0,
+      "category": "healthcare",
+      "counterparty": "RS Pondok Indah",
+      "channel": "card",
+      "country": "ID"
+    }
+  ]
+}
